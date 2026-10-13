@@ -8,7 +8,8 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "fastapi>=0.143.0",
+    "fastapi",
+    "uvicorn[standard]>=0.54.0",
 ]
 
 [project.scripts]
@@ -17,3 +18,4 @@ toward-vaais = "toward_vaais:main"
 [build-system]
 requires = ["uv_build>=0.13.0,<0.14.0"]
 build-backend = "uv_build"
+
